@@ -8,9 +8,6 @@ html, body {
   padding: 0;
 }
 
-// Display in IE6-9 and FF3
-// -------------------------
-
 article,
 aside,
 details,
@@ -24,9 +21,6 @@ section {
   display: block;
 }
 
-// Display block in IE6-9 and FF3
-// -------------------------
-
 audio,
 canvas,
 video {
@@ -35,35 +29,26 @@ video {
   *zoom: 1;
 }
 
-// Prevents modern browsers from displaying 'audio' without controls
-// -------------------------
-
 audio:not([controls]) {
     display: none;
 }
-
-// Base settings
-// -------------------------
 
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-// Focus states
+
 a:focus {
   outline: thin dotted $grayDark;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-// Hover & Active
+
 a:hover,
 a:active {
   outline: 0;
 }
-
-// Prevents sub and sup affecting line-height in all browsers
-// -------------------------
 
 sub,
 sup {
@@ -72,15 +57,14 @@ sup {
   line-height: 0;
   vertical-align: baseline;
 }
+
 sup {
   top: -0.5em;
 }
+
 sub {
   bottom: -0.25em;
 }
-
-// Img border in a's and image quality
-// -------------------------
 
 img {
   max-width: 100%;
@@ -89,10 +73,6 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-// Forms
-// -------------------------
-
-// Font size in all browsers, margin changes, misc consistency
 button,
 input,
 select,
