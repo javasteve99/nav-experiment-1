@@ -2,3 +2,60 @@
 Styles
 ========================================================================== */
 
+nav {
+  @include background-image(linear-gradient(top, tint($black, 20%) 0%, $black 100%));
+  width: 100%;
+
+  ul {
+    @include clearfix;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 2%;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+    border-left: 1px solid rgba($white, 0.1);
+  }
+
+  li:last-child {
+    border-right: 1px solid rgba($white, 0.1);
+  }
+
+  a {
+    background: url('../images/icons.png') no-repeat 2px 0px;
+    color: $white;
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    text-decoration: none;
+    opacity: 0.3;
+    overflow: hidden;
+    padding-left: 44px;
+    width: 1px;
+    @include transition(all, 0.5s, $ease-out-sine);
+  }
+
+  a.two {
+    background-position: 2px -41px;
+  }
+
+  a.three {
+    background-position: 2px -83px;
+  }
+
+  a.four {
+    background-position: 2px -124px;
+  }
+
+  a.five {
+    background-position: 2px -165px;
+  }
+
+  a:hover {
+    opacity: 1.0;
+    width: 90px;
+  }
+}

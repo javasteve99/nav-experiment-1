@@ -189,3 +189,69 @@ em {
 /* ==========================================================================
 Styles
 ========================================================================== */
+nav {
+  background-image: -webkit-linear-gradient(top, #333333 0%, black 100%);
+  background-image: -moz-linear-gradient(top, #333333 0%, black 100%);
+  background-image: -ms-linear-gradient(top, #333333 0%, black 100%);
+  background-image: -o-linear-gradient(top, #333333 0%, black 100%);
+  background-image: linear-gradient(top, #333333 0%, black 100%);
+  width: 100%; }
+  nav ul {
+    zoom: 1;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 2%;
+    width: 100%; }
+    nav ul:before, nav ul:after {
+      content: "";
+      display: table; }
+    nav ul:after {
+      clear: both; }
+  nav li {
+    float: left;
+    border-left: 1px solid rgba(255, 255, 255, 0.1); }
+  nav li:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1); }
+  nav a {
+    background: url("../images/icons.png") no-repeat 2px 0px;
+    color: white;
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    text-decoration: none;
+    opacity: 0.3;
+    overflow: hidden;
+    padding-left: 44px;
+    width: 1px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    -ms-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+  nav a.two {
+    background-position: 2px -41px; }
+  nav a.three {
+    background-position: 2px -83px; }
+  nav a.four {
+    background-position: 2px -124px; }
+  nav a.five {
+    background-position: 2px -165px; }
+  nav a:hover {
+    opacity: 1.0;
+    width: 90px; }
